@@ -7,9 +7,15 @@ Open-source GeForce Now alternative for local hosting (residential complexes, LA
 A management layer on top of [Sunshine](https://github.com/LizardByte/Sunshine) that enables multi-GPU, multi-user game streaming from a shared Linux server.
 
 ### Target Clients
+
+**Android (primary focus):**
+- [AYN Odin 3](https://www.ayntec.com/products/ayn-odin-3) - Snapdragon 8 Elite, Android 15
+- [AYANEO KONKR Pocket FIT Elite](https://www.ayaneo.com/) - Snapdragon 8 Elite
+- AYANEO Pocket S, Anbernic RG505/RG556
+
+**Linux:**
 - Steam Deck / SteamOS
 - Bazzite (Fedora-based gaming distro)
-- Android handhelds (ROG Ally, Lenovo Legion Go with Android, etc.)
 
 Uses [Moonlight](https://moonlight-stream.org/) clients for streaming.
 
