@@ -10,8 +10,6 @@ A management layer on top of [Sunshine](https://github.com/LizardByte/Sunshine) 
 
 **Android (primary focus):**
 - [AYN Odin 3](https://www.ayntec.com/products/ayn-odin-3) - Snapdragon 8 Elite, Android 15
-- [AYANEO KONKR Pocket FIT Elite](https://www.ayaneo.com/) - Snapdragon 8 Elite
-- AYANEO Pocket S, Anbernic RG505/RG556
 
 **Linux:**
 - Steam Deck / SteamOS
