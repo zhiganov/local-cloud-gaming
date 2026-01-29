@@ -1,0 +1,34 @@
+version: "3.8"
+
+services:
+  orchestrator:
+    build: ./orchestrator
+    ports:
+      - "8080:8080"
+    environment:
+      - GPU_COUNT=${GPU_COUNT:-1}
+      - BASE_PORT=${BASE_PORT:-47984}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin}
+      - SESSION_TIMEOUT=${SESSION_TIMEOUT:-4h}
+    volumes:
+      - ./data:/data
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
+
+  # Sunshine instances are created dynamically by orchestrator
+  # Template for reference:
+  # sunshine-0:
+  #   image: lizardbyte/sunshine:latest
+  #   runtime: nvidia
+  #   environment:
+  #     - NVIDIA_VISIBLE_DEVICES=0
+  #   ports:
+  #     - "47984-47990:47984-47990/tcp"
+  #     - "47998-48010:47998-48010/udp"
+  #   volumes:
+  #     - ./sunshine/0:/config
+  #   restart: unless-stopped
+
+networks:
+  default:
+    name: local-cloud-gaming

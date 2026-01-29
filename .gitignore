@@ -1,0 +1,19 @@
+# Environment
+.env
+
+# Data
+/data/
+
+# Build artifacts
+/orchestrator/bin/
+/dashboard/dist/
+/dashboard/node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
